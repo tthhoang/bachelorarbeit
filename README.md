@@ -1,1 +1,1 @@
-# bachelorarbeit
+# R-Code zur Bachelorarbeit
