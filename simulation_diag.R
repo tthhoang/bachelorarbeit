@@ -21,7 +21,7 @@ simulation <- function(schritte, wkt, n_trials, x0, a, tau){
     x <- x0
     steps_count <- 0
     while(!(all(abs(x) < a)) && all(abs(x) <= tau)){
-      m <- sample(schritte, size = 2, replace = TRUE, pro = wkt)
+      m <- sample(schritte, size = 2, replace = TRUE, prob = wkt)
       x <- c(m[1]*x[1], m[2]*x[2])
       steps_count <- steps_count + 1
     }
